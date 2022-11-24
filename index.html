@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/league.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: -1500%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+<img src="LOGO COMPLETO ADN.png" alt="" style="width: 500px; object-fit: fill">
+
+</div>
+
+<div class="" style="position: absolute; left: 60%; top: 0%; height: 30%; width: 40%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+ADN Group 
+</div>
+
+<div class="" style="display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+## Proyecto Instalación de Ópticas
+</div>
+
+# Alcon
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Centro de adaptación  Imagen  Visual Power Center Tecamac
+Dirección: Centro Comercial Power Center, local 13-A carretera México Pachuca
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Antes
+<img src="Instalaciones Alcon/Imagen Visual/h/antes.jpeg" alt="" style="object-fit: scale-down">
+
+Imagen Visual
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Antes
+<img src="Presentación Alcon/CDMX/WhatsApp Image 2022-11-16 at 1.30.42 PM (4).jpeg" alt="" style="object-fit: scale-down">
+
+Imagen Visual
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Despues
+<img src="Instalaciones Alcon/Imagen Visual/h/despues cubo.jpeg" alt="" style="object-fit: scale-down">
+
+Imagen Visual
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Despues 
+<img src="Instalaciones Alcon/Imagen Visual/h/despues gafas.jpeg" alt="" style="object-fit: scale-down">
+
+Imagen Visual
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Despues 
+<split >
+<img src="Instalaciones Alcon/Imagen Visual/Despues lentes.jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+
+<img src="Instalaciones Alcon/Imagen Visual/despues fuera.jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+
+<img src="Instalaciones Alcon/Imagen Visual/Despues pupi.jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+</split>
+
+Imagen Visual
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Optica Optiman
+Dirección: 4 poniente 910 colonia centro,  C.P. 72000, Puebla
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Antes
+<img src="Instalaciones Alcon/Optiman/h/antes gafa.jpeg" alt="" style="object-fit: scale-down">
+
+Optica Optiman
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Antes 
+<img src="Instalaciones Alcon/Optiman/h/antes gafa 2.jpeg" alt="" style="object-fit: scale-down">
+
+Optica Optiman
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Despues
+<img src="Instalaciones Alcon/Optiman/h/cubos pupi.jpeg" alt="" style="object-fit: scale-down">
+
+Optica Optiman
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Despues
+<img src="Instalaciones Alcon/Optiman/h/frente todo.jpeg" alt="" style="object-fit: scale-down">
+
+Optica Optiman
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Después
+<split >
+<img src="Instalaciones Alcon/Optiman/todo final .jpeg" alt="" style="width: 1|px; height: 400px; object-fit: fill">
+
+-
+<img src="Instalaciones Alcon/Optiman/lejos todo .jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+</split>
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# ARTICULOS OPTICOS DE HIGIENE
+
+Dirección: ISABEL LA CATOLICA 28, CUAUHTEMOC, Miguel Hidalgo, 06000
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Antes
+
+<img src="Instalaciones Alcon/Isabel la catolica/h/antes cubo.jpeg" alt="" style="object-fit: scale-down">
+
+
+Artículos Opticos de Higiene
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Antes
+
+<img src="Instalaciones Alcon/Isabel la catolica/WhatsApp Image 2022-11-16 at 1.29.24 PM (5).jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+
+Artículos Opticos De  Higiene
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Despues
+<img src="Instalaciones Alcon/Isabel la catolica/h/cbo 1.jpeg" alt="" style="object-fit: scale-down">
+
+Artículos Ópticos de Higiene
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Despues
+<split >
+
+<img src="Instalaciones Alcon/Isabel la catolica/stand.jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+-
+<img src="Instalaciones Alcon/Isabel la catolica/gafa.jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+</split>
+
+Artículos Ópticos de Higiene
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Después 
+
+<img src="Instalaciones Alcon/Isabel la catolica/h/gafa pan.jpeg" alt="" style="object-fit: scale-down">
+
+
+Artículos Ópticos De Higiene
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Después
+<img src="Presentación Alcon/CDMX/WhatsApp Image 2022-11-16 at 1.30.10 PM (4).jpeg" alt="" style="object-fit: scale-down">
+
+Artículos Ópticos De Higiene
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# DISTRIBUIDORES OPTICOS NUEVA ITALIA
+Dirección: Motolinia 8 Colonia Centro CDMX C.P. 06010
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# AnTes
+<img src="Presentación Alcon/CDMX/WhatsApp Image 2022-11-16 at 1.30.09 PM (3).jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+Optica Nueva Italia
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# DespUés
+<split even >
+<img src="Instalaciones Alcon/nUEVA iTALIA/cerca.jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+-
+<img src="Instalaciones Alcon/nUEVA iTALIA/stand.jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+</split>
+Optica Nueva Italia
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Después
+<split >
+<img src="Instalaciones Alcon/nUEVA iTALIA/h/final.jpeg" alt="" style="width: px; height: 200px; object-fit: fill">
+
+<img src="Instalaciones Alcon/nUEVA iTALIA/h/gafa.jpeg" alt="" style="width: px; height: 200px; object-fit: fill">
+
+</split>
+Optica Nueva Italia
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Jazmin Erika Rocha Vega
+Dirección: Bolivar 24 local G Cuauhtemoc C.P.06500, Miguel Hidalgo
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Antes
+
+<img src="Instalaciones Alcon/Bolivar/h ntes dentro.jpeg" alt="" style="object-fit: scale-down">
+
+Optica Bolivar
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Antes
+
+<img src="Instalaciones Alcon/Bolivar/Antes lente.jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+
+Optica Bolivar
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Despues
+
+<img src="Instalaciones Alcon/Bolivar/h Despues lentes.jpeg" alt="" style="object-fit: scale-down">
+
+
+Optica Bolivar
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Despues 
+<split >
+<img src="Instalaciones Alcon/Bolivar/dESPUES lENTE.jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+-
+<img src="Instalaciones Alcon/Bolivar/dESPUES TODO.jpeg" alt="" style="width: px; height: 400px; object-fit: fill">
+
+</split>
+
+
+Optica Bolivar
+</div></script></section></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+	var isLight = isLight(bgColor);
+
+	if(isLight){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+        ],
+
+
+    	allottedTime: 120 * 1000,
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+		markdown: {
+		  gfm: true,
+		  mangle: true,
+		  pedantic: false,
+		  smartLists: false,
+		  smartypants: false,
+		},
+
+		mermaid: {
+			theme: isLight ? 'default' : 'dark',
+		},
+
+		customcontrols: {
+			controls: [
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":false,"transition":"fade","transitionSpeed":"slow"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+
+  <!-- created with Advanced Slides -->
+</html>
